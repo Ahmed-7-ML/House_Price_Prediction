@@ -1,10 +1,3 @@
-title: California House Price Prediction API
-emoji: 🏠
-colorFrom: blue
-colorTo: purple
-sdk: docker
-app_port: 8000
-
 # 🏠 House Price Prediction - California Housing Dataset
 
 A complete **end-to-end machine learning project** for predicting median house prices in California using **XGBoost Regressor**. Built with scikit-learn, pandas, matplotlib, seaborn, and XGBoost.
