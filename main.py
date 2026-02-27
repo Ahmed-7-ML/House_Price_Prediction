@@ -27,6 +27,11 @@ class HouseFeatures(BaseModel):
     Latitude: float = Field(..., description='block group latitude')
     Longitude: float = Field(..., description='block group longitude')
 
+@app.get("/")
+def welcome():
+    return {"Message": "Welcome to House Price Prediction API! Use POST /predict"}
+
+
 @app.post("/predict")
 def predict(features: HouseFeatures):
     data = np.array([[features.MedInc, features.HouseAge, features.AveRooms, features.AveBedrms,

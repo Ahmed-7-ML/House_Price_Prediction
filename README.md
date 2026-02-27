@@ -1,3 +1,10 @@
+title: California House Price Prediction API
+emoji: 🏠
+colorFrom: blue
+colorTo: purple
+sdk: docker
+app_port: 8000
+
 # 🏠 House Price Prediction - California Housing Dataset
 
 A complete **end-to-end machine learning project** for predicting median house prices in California using **XGBoost Regressor**. Built with scikit-learn, pandas, matplotlib, seaborn, and XGBoost.
@@ -7,6 +14,7 @@ A complete **end-to-end machine learning project** for predicting median house p
 ## 📋 Project Overview
 
 This project demonstrates a full ML pipeline:
+
 - Data loading & exploration
 - Basic cleaning & EDA
 - Model training with **XGBoost**
@@ -15,24 +23,24 @@ This project demonstrates a full ML pipeline:
 - Model saving (both joblib and native XGBoost format)
 - Model loading & inference
 
-**Dataset**: California Housing (1990 U.S. Census) – 20,640 samples  
-**Task**: Regression  
+**Dataset**: California Housing (1990 U.S. Census) – 20,640 samples
+**Task**: Regression
 **Target**: Median House Value (`Price` in $100,000 units)
 
 ---
 
 ## 🛠️ Features
 
-| Feature       | Description                              |
-|---------------|------------------------------------------|
-| `MedInc`      | Median income in block group             |
-| `HouseAge`    | Median house age in block group          |
-| `AveRooms`    | Average number of rooms per household    |
-| `AveBedrms`   | Average number of bedrooms per household |
-| `Population`  | Block group population                   |
-| `AveOccup`    | Average number of household members      |
-| `Latitude`    | Block group latitude                     |
-| `Longitude`   | Block group longitude                    |
+| Feature        | Description                              |
+| -------------- | ---------------------------------------- |
+| `MedInc`     | Median income in block group             |
+| `HouseAge`   | Median house age in block group          |
+| `AveRooms`   | Average number of rooms per household    |
+| `AveBedrms`  | Average number of bedrooms per household |
+| `Population` | Block group population                   |
+| `AveOccup`   | Average number of household members      |
+| `Latitude`   | Block group latitude                     |
+| `Longitude`  | Block group longitude                    |
 
 ---
 
@@ -42,6 +50,7 @@ This project demonstrates a full ML pipeline:
 - **Test R²**: 0.8486
 
 Visualizations included:
+
 - Residual Distribution
 - XGBoost Learning Curve (RMSE)
 
@@ -114,6 +123,7 @@ model.save_model('../models/xgb_house_price_model.json')
 ```
 
 **Loading example**:
+
 ```python
 # Joblib
 model = joblib.load('../models/xgb_house_price_model.pkl')
@@ -161,4 +171,7 @@ Made by: Ahmed Akram Amer | The Triple AI
 **Made with ❤️ using XGBoost & scikit-learn**
 
 Feel free to ⭐ the repo if you found it helpful!
+
+```
+
 ```
